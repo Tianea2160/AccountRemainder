@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jhj.appwithkotlin">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jhj.examplepractice">
 
     <application
+        android:name=".AccountsApplication"
         android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppWithKotlin">
+        android:theme="@style/Theme.ExamplePractice"
+        tools:targetApi="31">
+        <activity
+            android:name=".detail.AccountDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".add.NewAccountActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

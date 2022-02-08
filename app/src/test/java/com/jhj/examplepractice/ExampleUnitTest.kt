@@ -1,4 +1,4 @@
-package com.jhj.appwithkotlin
+package com.jhj.examplepractice
 
 import org.junit.Test
 

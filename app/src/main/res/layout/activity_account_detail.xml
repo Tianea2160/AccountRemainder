@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.AccountDetailActivity"
+    android:orientation="vertical"
+
+    android:layout_margin="6pt"
+    >
+    <TextView
+        android:id="@+id/detail_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:text="name"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="id : "
+
+            />
+        <TextView
+            android:id="@+id/detail_account_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="id"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="pwd : "
+
+            />
+        <TextView
+            android:id="@+id/detail_account_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="password"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="token : "
+
+            />
+        <TextView
+            android:id="@+id/detail_account_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textStyle="normal"
+            android:text="token"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="6pt"
+        android:text="delete"
+        />
+</LinearLayout>
