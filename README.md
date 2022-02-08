@@ -13,12 +13,9 @@
 4. 세부사항을 보고 싶다면 해당 계정의 이름을 클릭한다.
 5. 정보를 확인한다.
 
-![image1](./image/image1.png)
-![image2](./image/image2.png)
-![image3](./image/image3.png)
-![image4](./image/image4.png)
-![image5](./image/image5.png)
-![image6](./image/image6.png)
+
+<img src="image/image1.png" width=200 heigth=350> <img src="image/image2.png" width=200 heigth=350> <img src="image/image3.png" width=200 heigth=350> <img src="image/image4.png" width=200 heigth=350> <img src="image/image5.png" width=200 heigth=350> <img src="image/image6.png" width=200 heigth=350> 
+
 
 
 ## how to make
