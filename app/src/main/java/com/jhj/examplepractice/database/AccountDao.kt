@@ -1,5 +1,7 @@
 package com.jhj.examplepractice.database
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.LiveDataScope
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -23,6 +25,6 @@ interface AccountDao {
     suspend fun delete(name:String)
 
     @Query("SELECT * FROM account_table WHERE name = :name;")
-    suspend fun getAccountByName(name:String):Account?
+    fun getAccountByName(name:String): Flow<Account?>
 
 }

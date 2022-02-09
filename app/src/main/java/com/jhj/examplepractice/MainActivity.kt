@@ -41,10 +41,7 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(view: View, account: Account) {
                 Log.d("SSS", "${account.name}번 리스트 선택")
                 val intent = Intent(this@MainActivity, AccountDetailActivity::class.java)
-                intent.putExtra(DETAIL_ACCOUNT_NAME, account.name)
-                intent.putExtra(DETAIL_ACCOUNT_ID, account.id)
-                intent.putExtra(DETAIL_ACCOUNT_PWD, account.pwd)
-                intent.putExtra(DETAIL_ACCOUNT_TOKEN, account.token)
+                intent.putExtra("account", account)
                 startActivity(intent)
             }
         })

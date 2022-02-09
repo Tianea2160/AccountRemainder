@@ -21,7 +21,7 @@ class AccountRepository(private val accountDao: AccountDao) {
     }
     @Suppress("RedundantSuspendModifier")
     @WorkerThread
-    suspend fun getAccountByName(target : String):Account?{
+    fun getAccountByName(target : String):Flow<Account?>{
         return accountDao.getAccountByName(target)
     }
 }
