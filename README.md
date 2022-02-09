@@ -5,6 +5,20 @@
 > 평소 계정 로그인을 할때 비밀번호를 여러가지 사용하거나 비밀번호 대신에 토큰을 사용하게 되면서 외워야하고 외울 수 없는 개인정보들이 많아졌습니다. 따라서 저는 이를 해결하고자 간단한 crud 앱을 만들어보자 메모장보다는 간
 단하고 사용하기 편한 앱을 만들자 하는 취지에서 다음 앱을 구현하였습니다.
 
+## The composition that I used
+- RecyclerView
+- ViewModel with LiveData
+- Intent
+- Corrutines
+- Room database
+
+> ### 기존 계획에서의 수정사항
+>
+> 1. 기존에 fragment를 와 navigation을 이용하여 어플을 구상하려고 하였지만 인터넷의 여러 예시들이나 android docs에서도 activity와 intent를 이용한 구현이 더 많이 보이게 되어서 수정하였습니다.
+> 2. 공식문서에서 리스트뷰를 사용하는 것보다 리사이클러뷰를 사용하는 것을 더 권장하고 성능적인 측면에서 좋을 것 같아서 리스트뷰 대신 리사이클러 뷰를 변경하였습니다.
+> 3. 여러 정보를 화면에 나열 하여 출력해야하는 상황이고 액티비티 간의 이동이 많기 때문에 ViewModel을 이용하여 ui 데이터를 저장한 후 사용하는 것을 선택했습니다.
+
+
 ## how to use
 
 1. 우측 하단에 십자 표시가 된 아이콘을 누른다. 
@@ -15,8 +29,7 @@
 
 
 <img src="image/image1.png" width=200 heigth=350> <img src="image/image2.png" width=200 heigth=350> <img src="image/image3.png" width=200 heigth=350> <img src="image/image4.png" width=200 heigth=350> <img src="image/image5.png" width=200 heigth=350> <img src="image/image6.png" width=200 heigth=350> 
-
-
+(실제 동작화면 중 일부)
 
 ## how to make
  - create/update
