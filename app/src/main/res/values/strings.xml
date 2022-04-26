@@ -4,4 +4,8 @@
     <string name="hint_word">account...</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Account not saved because account name is empty.</string>
+    <string name="id">id :</string>
+    <string name="item_detail_name">name</string>
+    <string name="item_detail_pwd">pwd :</string>
+    <string name="item_detail_token">token :</string>
 </resources>

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".detail.AccountDetailActivity"
     android:orientation="vertical"
-
     android:layout_margin="6pt"
     >
     <TextView
@@ -15,75 +14,126 @@
         android:layout_height="wrap_content"
         android:textSize="15pt"
         android:textStyle="bold"
-        android:text="name"
+        android:text="@string/item_detail_name"
+        android:layout_marginBottom="10dp"
         />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@drawable/item_background"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
-            android:text="id : "
-
+            android:text="@string/id"
             />
         <TextView
             android:id="@+id/detail_account_id"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
             android:text="id"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detail_copy_button_id"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="copy"
+            android:textColor="@color/white"
+            android:textSize="5pt"
+            />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@drawable/item_background"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
-            android:text="pwd : "
-
+            android:text="@string/item_detail_pwd"
             />
         <TextView
             android:id="@+id/detail_account_pwd"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
             android:text="password"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detail_copy_button_pwd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="copy"
+            android:textColor="@color/white"
+            android:textSize="5pt" />
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@drawable/item_background"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
-            android:text="token : "
+            android:text="@string/item_detail_token"
 
             />
         <TextView
             android:id="@+id/detail_account_token"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11pt"
             android:textStyle="normal"
             android:text="token"
             />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/detail_copy_button_token"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="copy"
+            android:textColor="@color/white"
+            android:textSize="5pt" />
     </LinearLayout>
 
 

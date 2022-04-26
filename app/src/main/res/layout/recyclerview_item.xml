@@ -9,5 +9,10 @@
         style="@style/word_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_light" />
+        android:background="@drawable/item_background"
+        android:textColor="@color/black"
+        android:padding="@dimen/big_padding"
+        android:textStyle="bold"
+        android:elevation="9dp"
+        />
 </LinearLayout>

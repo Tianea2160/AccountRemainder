@@ -13,7 +13,9 @@
         android:hint="Name"
         android:inputType="textAutoComplete"
         android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/item_background"
+        />
     <EditText
         android:id="@+id/edit_login_id"
         android:layout_width="match_parent"
@@ -23,7 +25,9 @@
         android:hint="id"
         android:inputType="textAutoComplete"
         android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/item_background"
+        />
     <EditText
         android:id="@+id/edit_login_pwd"
         android:layout_width="match_parent"
@@ -33,7 +37,9 @@
         android:hint="password"
         android:inputType="textAutoComplete"
         android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/item_background"
+        />
     <EditText
         android:id="@+id/edit_login_token"
         android:layout_width="match_parent"
@@ -43,14 +49,17 @@
         android:hint="token"
         android:inputType="textAutoComplete"
         android:layout_margin="@dimen/big_padding"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:background="@drawable/item_background"
+        />
     <Button
         android:id="@+id/button_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:text="@string/button_save"
         android:layout_margin="@dimen/big_padding"
-        android:textColor="@color/buttonLabel" />
+        android:textColor="@color/buttonLabel"
+        android:background="@drawable/item_background"
+        />
 
 </LinearLayout>
