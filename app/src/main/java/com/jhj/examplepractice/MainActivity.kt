@@ -1,5 +1,6 @@
 package com.jhj.examplepractice
 
+import SecurityUtil
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -73,7 +74,9 @@ class MainActivity : AppCompatActivity() {
 
             //intent에 정보를 넣기전에 무조건 string이 들어가도록 검사를 했다.
             name?.let{
-                val account = Account(it, id?:"", pwd?:"", token?:"")
+                val securityUtil:SecurityUtil = SecurityUtil.getInstance()
+                val encodedPwd : String = securityUtil.encryptECB(pwd ?: "")
+                val account = Account(it, id?:"", encodedPwd, token?:"")
                 accountViewModel.insert(account)
             }
         } else {

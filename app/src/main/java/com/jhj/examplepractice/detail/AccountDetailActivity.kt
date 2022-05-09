@@ -1,5 +1,6 @@
 package com.jhj.examplepractice.detail
 
+import SecurityUtil
 import android.content.ClipData
 import android.content.ClipboardManager
 import androidx.appcompat.app.AppCompatActivity
@@ -12,12 +13,15 @@ import com.jhj.examplepractice.*
 import com.jhj.examplepractice.database.Account
 import com.jhj.examplepractice.databinding.ActivityAccountDetailBinding
 import kotlinx.coroutines.*
+import org.mindrot.jbcrypt.BCrypt
 
 @DelicateCoroutinesApi
 class AccountDetailActivity : AppCompatActivity() {
     private val accountDetailViewModel by viewModels<AccountDetailViewModel> {
         AccountDetailViewModelFactory((application as AccountsApplication).repository)
     }
+
+    private lateinit var securityUtil: SecurityUtil
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,9 +43,12 @@ class AccountDetailActivity : AppCompatActivity() {
         //현재 데이터에 대한 처리
         detailName.text = currentAccount?.name
         detailId.text = currentAccount?.id
-        detailPwd.text = currentAccount?.pwd
-        detailToken.text = currentAccount?.token
 
+        securityUtil = SecurityUtil.getInstance()
+        val decodedPwd = securityUtil.decryptECB(currentAccount!!.pwd)
+        detailPwd.text = decodedPwd
+
+        detailToken.text = currentAccount?.token
         val clipboardManager: ClipboardManager =
             getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
         // 클립보드 복사를 위한 리스너

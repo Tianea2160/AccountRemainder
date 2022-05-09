@@ -15,6 +15,7 @@
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp"
         android:background="@drawable/item_background"
+        android:paddingStart="10dp"
         />
     <EditText
         android:id="@+id/edit_login_id"
@@ -27,6 +28,8 @@
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp"
         android:background="@drawable/item_background"
+        android:paddingStart="10dp"
+
         />
     <EditText
         android:id="@+id/edit_login_pwd"
@@ -39,6 +42,7 @@
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp"
         android:background="@drawable/item_background"
+        android:paddingStart="10dp"
         />
     <EditText
         android:id="@+id/edit_login_token"
@@ -51,6 +55,7 @@
         android:layout_margin="@dimen/big_padding"
         android:textSize="18sp"
         android:background="@drawable/item_background"
+        android:paddingStart="10dp"
         />
     <Button
         android:id="@+id/button_save"

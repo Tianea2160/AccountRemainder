@@ -16,6 +16,8 @@
         android:textStyle="bold"
         android:text="@string/item_detail_name"
         android:layout_marginBottom="10dp"
+        android:paddingStart="10dp"
+
         />
 
     <LinearLayout
@@ -26,6 +28,7 @@
         android:padding="5dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:paddingStart="10dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -66,6 +69,7 @@
         android:padding="5dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:paddingStart="10dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -104,6 +108,7 @@
         android:padding="5dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:paddingStart="10dp"
         >
         <TextView
             android:layout_width="wrap_content"
@@ -135,7 +140,6 @@
             android:textColor="@color/white"
             android:textSize="5pt" />
     </LinearLayout>
-
 
     <Button
         android:id="@+id/delete_button"

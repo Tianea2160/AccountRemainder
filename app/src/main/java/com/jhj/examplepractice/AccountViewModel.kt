@@ -6,7 +6,7 @@ import com.jhj.examplepractice.database.AccountRepository
 import kotlinx.coroutines.launch
 
 class AccountViewModel(private val repository: AccountRepository): ViewModel() {
-    val allWords : LiveData<List<Account>> = repository.allWords.asLiveData()
+    val allWords : LiveData<List<Account>> = repository.allAccount.asLiveData()
     fun insert(account: Account) = viewModelScope.launch {
         repository.insert(account)
     }

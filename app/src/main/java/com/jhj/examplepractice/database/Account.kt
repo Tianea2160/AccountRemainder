@@ -7,14 +7,10 @@ import java.io.Serializable
 
 
 @Entity(tableName = "account_table")
-data class Account(
+class Account(
     @PrimaryKey
-    @ColumnInfo(name = "name")
-    val name:String,
-    @ColumnInfo
-    val id:String,
-    @ColumnInfo
-    val pwd:String,
-    @ColumnInfo
-    val token:String,
-) :Serializable
+    @ColumnInfo(name = "name") val name: String,
+    @ColumnInfo val id: String,
+    @ColumnInfo val pwd: String,
+    @ColumnInfo val token: String
+) : Serializable
