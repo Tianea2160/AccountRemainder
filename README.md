@@ -28,7 +28,7 @@
 5. 정보를 확인한다.
 
 
-<img src="image/image1.png" width=200 heigth=350> <img src="image/image2.png" width=200 heigth=350> <img src="image/image3.png" width=200 heigth=350> <img src="image/image4.png" width=200 heigth=350> <img src="image/image5.png" width=200 heigth=350> <img src="image/image6.png" width=200 heigth=350> 
+<img src="image/re1.png" width=200 heigth=350> <img src="image/re2.png" width=200 heigth=350> <img src="image/re3.png" width=200 heigth=350> <img src="image/re4.png" width=200 heigth=350> <img src="image/re5.png" width=200 heigth=350> 
 (실제 동작화면 중 일부)
 
 ## how to make
